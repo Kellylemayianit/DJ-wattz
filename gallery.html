@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Ultimate Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="page-gallery">
+  <div class="grain"></div>
+
+  <nav class="top-nav">
+    <a href="index.html" class="nav-brand">W&amp;S</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="gallery-main">
+
+    <header class="page-header">
+      <p class="page-eyebrow">Ultimate Studio</p>
+      <h1 class="page-title">Gallery</h1>
+      <p class="page-desc">A selection of moments captured through the lens.</p>
+    </header>
+
+    <!-- Filter tabs -->
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="studio">Studio</button>
+      <button class="filter-btn" data-filter="event">Events</button>
+      <button class="filter-btn" data-filter="dj">DJ Sets</button>
+    </div>
+
+    <!-- Masonry Grid -->
+    <div class="masonry-grid" id="gallery-grid">
+      <!-- Images are rendered by script.js -->
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lb-close">✕</button>
+      <button class="lb-prev" id="lb-prev">‹</button>
+      <div class="lb-img-wrap">
+        <img src="" alt="Gallery image" id="lb-img" />
+      </div>
+      <button class="lb-next" id="lb-next">›</button>
+      <div class="lb-caption" id="lb-caption"></div>
+    </div>
+
+    <!-- CTA -->
+    <div class="gallery-cta">
+      <p>Like what you see?</p>
+      <a
+        href="https://wa.me/254746651645?text=Hi%20Ultimate%20Studio!%20I%20saw%20your%20gallery%20and%20I%27d%20love%20to%20book%20a%20photography%20session."
+        class="btn btn-glow sight"
+        target="_blank"
+        rel="noopener"
+      >
+        Book a Session
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2025 DJ Watts & Ultimate Studio · Kimana, Kenya</span>
+    <a href="contact.html">Contact</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
